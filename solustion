@@ -1,0 +1,46 @@
+#input 10000 cas ==>  Time: 77 ms, memory: 140 KB
+
+
+# include <iostream> // nous avons utilise std::cin and std::cout
+#include <vector> // nous avons declare une vectore .
+#include <cmath> //pour la fonction pow(a,b) ==> a^b en c++;
+
+using namespace std;
+//dans cette fonction nous avons coverte un number n a un number round et nous avons affiche ce numbre .
+{
+    vector <int> nub;
+    int count =0;
+    while (d)
+    {
+        if((d%10)*pow(10,count)) // nous avons vérifié si d%10==0 ou no
+            nub.push_back((d%10)*pow(10,count));
+        d/=10;
+        count++;
+    }
+    cout<<nub.size()<<endl; // nous avons affiche size de vectore .
+    int i =0;
+    // nous affiche les contunes de la vecture .
+    while (i<nub.size())
+    {
+        cout<<nub[i];
+        if(i+1<nub.size())
+            cout<<" ";
+        i++;   
+    }
+    cout<<endl;
+}
+
+// dans fonction main nous avons apple a la fonction ft_add() .
+int main()
+{
+    int n;
+    cin>>n;
+    while (n--)
+    {
+        int d;
+        cin>>d;
+        ft_ddd(d);
+    }
+}
+
+
